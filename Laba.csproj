@@ -105,8 +105,10 @@
     <None Include="Features\SiteNavigation.feature" />
     <None Include="Features\ContactUs.feature" />
     <None Include="Features\VideosOnTheConsultDesignPage.feature" />
-    <None Include="Features\ToDoApp.feature" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="nuget.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

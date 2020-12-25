@@ -73,14 +73,15 @@ namespace Laba.StepDefinitions
         [When(@"user move to another slide section")]
         public void WhenUserMoveToAnotherSlideSection()
         {
-            IWebElement NextSlide = driver.FindElement(By.XPath("//*[@id='main']/div[1]/div[7]/section/div/div[3]/div/div/div[2]/div[2]/p"));
+            //IWebElement NextSlide = driver.FindElement(By.XPath("//*[@id='main']/div[1]/div[7]/section/div/div[3]/div/div/div[2]/div/div[2]/button[2]"));
+            IWebElement NextSlide = driver.FindElement(By.ClassName("owl-next"));
             NextSlide.Click();
         }
         
         [When(@"user chooses the Last video")]
         public void WhenUserChoosesTheLastVideo()
         {
-            IWebElement PlayButtom_sec = driver.FindElement(By.XPath("//*[@id='main']/div[1]/div[7]/section/div/div[3]/div/div/div[2]/ul/div/div[4]/li/div"));
+            IWebElement PlayButtom_sec = driver.FindElement(By.XPath("//*[@id='main']/div[1]/div[7]/section/div/div[3]/div/div/div[2]/div/div[1]/div/div[7]/div/div[1]/div"));
             PlayButtom_sec.Click();
         }
         
